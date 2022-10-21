@@ -1,0 +1,28 @@
+Options +FollowSymLinks -MultiViews
+# Turn mod_rewrite on
+RewriteEngine On
+RewriteRule ^Index/	production/index.php	[NC,L]
+RewriteRule ^Register/ production/app/user/register.php	[NC,L]
+RewriteRule ^Login/	production/login.php	[NC,L]
+RewriteRule ^Cover/	production/cover.php	[NC,L]
+RewriteRule ^Profile/	production/app/user/profile.php	[NC,L]
+RewriteRule ^list-all/	production/app/list/listAll.php	[NC,L]
+RewriteRule ^list-pending/	production/app/list/listPending.php	[NC,L]
+RewriteRule ^list-success/	production/app/list/listSuccess.php	[NC,L]
+RewriteRule ^assign-task/	production/app/list/assignTask.php	[NC,L]
+RewriteRule ^accept-task/	production/app/list/acceptTask.php	[NC,L]
+
+#RewriteRule ^ListProject/	production/app/land-fund/project_list.php	[NC,L]
+#RewriteRule ^ManageBudget/	production/app/land-fund/manage_budget_list.php	[NC,L]
+#RewriteRule ^ManageBudgetDetail/	production/app/land-fund/manage_budget_detail.php	[NC,L]
+#RewriteRule ^ManageJD1/	production/app/land-fund/manage_jd.php	[NC,L]
+#RewriteRule ^InsertJD1/	production/app/land-fund/insert_jd1.php	[NC,L]
+#RewriteRule ^FormIncomeJD1/	production/app/land-fund/form_jd1/form_income.php	[NC,L]
+
+#RewriteRule ^InsertJD2/	production/app/land-fund/insert_jd2.php	[NC,L]
+#RewriteRule ^FormIncomeJD2/	production/app/land-fund/form_jd2/form_income.php	[NC,L]
+
+#RewriteRule ^InsertJD3/	production/app/land-fund/insert_jd3.php	[NC,L]
+#RewriteRule ^FormIncomeJD3/	production/app/land-fund/form_jd3/form_income.php	[NC,L]
+
+RewriteRule ^Logout/	production/logout.php	[NC,L]
