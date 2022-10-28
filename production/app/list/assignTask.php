@@ -13,9 +13,16 @@
     .card {
         border-radius: 15px !important;
         box-shadow: 0 0 10px rgba(206, 212, 218, 255) !important;
+        padding: 10px 5px !important;
     }
 
     .btn-success {
+        font-size: 24px;
+        font-weight: bold;
+        border-radius: 5px !important;
+    }
+
+    .btn-info {
         background-color: #1867c0 !important;
         font-size: 20px;
         font-weight: bold;
@@ -82,8 +89,8 @@
                                             </div>
                                         </div>
 
-                                        <div class="row pb-5 mb-4 ">
-                                            <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6 mb-4 mb-lg-0 py-2" v-for="item in list">
+                                        <div class="row pb-5 mb-2 ">
+                                            <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6 mb-2 mb-lg-0 py-2" v-for="item in list">
                                                 <!-- Card-->
                                                 <div class="card h-100 rounded shadow-sm border-0 ">
                                                     <div class="card-body px-4 pb-3 d-flex flex-column">
@@ -105,26 +112,23 @@
                                                         </div>
 
                                                         <div class="card-footer bg-transparent mt-auto border-0 p-0 pt-2">
-                                                            <button class="btn w-100 pb-0 mb-0" @click="toggle(item)" :class="item.status_accept=='2' ? 'btn-success' :'btn-warning'">
+                                                            <button class="btn w-100 pb-0 mb-0" @click="toggle(item)" :class="item.status_accept=='2' ? 'btn-info' :'btn-warning'">
                                                                 {{ item.status_accept == 2 ? 'เลือก' : 'ยกเลิก' }}
                                                             </button>
                                                         </div>
                                                     </div>
                                                 </div>
+                                        
                                             </div>
                                         </div>
 
-                                        <div class="row">
-                                        <!-- <nav>
-                            <ul class="pagination d-flex justify-content-center flex-wrap pagination-rounded-flat pagination-success">
-                                <li class="page-item"><a class="page-link" href="#" data-abc="true"><i class="fa fa-angle-left"></i></a></li>
-                                <li class="page-item active"><a class="page-link" href="#" data-abc="true">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#" data-abc="true">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#" data-abc="true">3</a></li>
-                                <li class="page-item"><a class="page-link" href="#" data-abc="true">4</a></li>
-                                <li class="page-item"><a class="page-link" href="#" data-abc="true"><i class="fa fa-angle-right"></i></a></li>
-                            </ul>
-                        </nav> -->
+                                        
+                                        <div class="pt-3 row">
+                                            <div class="col-md-12 text-center">
+                                                <button class="btn w-20 pb-0 mb-0 btn btn-success btn-lg">
+                                                        ยืนยันการเลือก
+                                                </button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

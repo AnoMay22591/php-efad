@@ -94,7 +94,7 @@
 
                                                         <img src="https://fad.rid.go.th/system_dev/ideaseed/production/images/pdf_img.png" alt="" class="mx-auto d-block img-pdf img-fluid d-block mx-auto mb-3">
                                                         <div class="card-heading text-left pb-0">เรื่อง</div>
-                                                        <div class="card-text">
+                                                        <div class="card-text font-weight-bold">
                                                             {{ item.description }}
                                                         </div>
 

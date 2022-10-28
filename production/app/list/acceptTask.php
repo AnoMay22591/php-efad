@@ -13,28 +13,16 @@
     .card {
         border-radius: 15px !important;
         box-shadow: 0 0 10px rgba(206, 212, 218, 255) !important;
-
+        font-size: 24px !important;
+    }
+    .card-title{
+        font-size: 24px !important;
     }
 
     .btn-success {
-        background-color: #1867c0 !important;
-        font-size: 20px;
+        font-size: 24px;
         font-weight: bold;
         border-radius: 5px !important;
-    }
-
-    .btn-warning {
-        background-color: #ff5252 !important;
-        font-size: 20px;
-        font-weight: bold;
-        color: white;
-        border-radius: 5px !important;
-    }
-
-    .size-font {
-        font-size: 22px !important;
-        color: black;
-        font-weight: bold;
     }
 
     .card-text {
@@ -58,7 +46,15 @@
         padding: 15px 0px;
         text-align: center;
         font-weight: bold;
-        font-size: 22px !important;
+        font-size: 24px !important;
+    }
+
+    .form-control {
+        border-radius: 5px;
+        border-bottom: 1px solid #E0E0E0;
+        box-shadow: 0 1px 5px -2px rgba(0, 0, 0, .2);
+        font-size: 24px !important;
+        font-weight: bold !important;
     }
 
     @media(min-width: 1200px) and (max-width: 1500px) {
@@ -88,7 +84,7 @@
                                     <!-- <div class="x_content mx-auto "> -->
 
                                     <div class="row ">
-                                        <div class="col-10 col-xl-3 col-lg-6 col-md-6 col-sm-6 mx-auto pt-3">
+                                        <div class="col-12 col-xl-3 col-lg-6 col-md-6 col-sm-6 mx-auto pt-3">
                                             <div class="card mb-3">
                                                 <div class="card-header">ผลการตอบรับรายการของคุณ</div>
                                                 <div class="card-heading">
@@ -98,11 +94,18 @@
                                                 <img class="mx-auto d-block img-pdf img-fluid d-block mx-auto mb-3 pt-2" src="https://fad.rid.go.th/system_dev/ideaseed/production/images/pdf_img.png">        
                                                 <div class="card-body">
                                                     <h5 class="card-title font-weight-bold">เพิ่มเติม</h5>
-                                                    <p class="card-text">ดูรายละเอียดรายการเพิ่มเติม คลิกที่รูปภาพเพื่อไปยังไฟล์ต้นทาง</p>
+                                                    <p class="card-text font-weight-bold">ดูรายละเอียดรายการเพิ่มเติม คลิกที่รูปภาพเพื่อไปยังไฟล์ต้นทาง</p>
                                                     <hr>
                                                     <h5 class="card-title font-weight-bold">หมายเหตุ</h5>
                                                     <div >
                                                         <textarea class="form-control"  rows="3"></textarea>
+                                                    </div>
+                                                    <div class="pt-3 row">
+                                                        <div class="col-md-12 bg-light text-right">
+                                                            <button class="btn w-25 pb-0 mb-0 btn btn-success">
+                                                                ยืนยัน
+                                                            </button>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
